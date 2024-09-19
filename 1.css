@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f5f5f5;
+    background: radial-gradient(circle, #3f0071, #0f0c29);
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: rgba(82, 34, 139, 0.8); /* Tom roxo escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #9c27b0;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    animation: glow 2s infinite alternate;
+    z-index: 0;
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 1;
+}
+
+/* Efeito de digitação */
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #9c27b0;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #9c27b0; }
+}
+
+/* Estilo da seção principal */
+main {
+    padding: 40px 0;
+}
+
+.card {
+    background: rgba(97, 13, 208, 0.95); /* Fundo branco com leve transparência */
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+    opacity: 0.5;
+    z-index: -1;
+    pointer-events: none;
+    animation: pulse 5s infinite;
+}
+
+.card img {
+    max-width: 30%; /* Reduzir o tamanho da imagem */
+    height: 20%;
+    border-bottom: 4px solid #9c27b0; /* Borda roxa */
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    color: #9c27b0;
+    margin: 15px 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #d500f9, #aa00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGlow 3s infinite alternate;
+}
+
+.card p, .card ul {
+    color: #eee;
+    font-size: 1.2em;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card li {
+    margin-bottom: 15px;
+}
+
+/* Efeito de brilho e sombra para imagens adicionais */
+.additional-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.additional-images img {
+    width: 20%; /* Reduz o tamanho das imagens adicionais */
+    height: 20%;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.additional-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    filter: brightness(1);
+}
+
+/* Estilo do rodapé */
+footer {
+    background: rgba(82, 34, 139, 0.8); /* Tom roxo escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.4);
+    border-top: 2px solid #9c27b0;
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Animações */
+@keyframes glow {
+    0% {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255,

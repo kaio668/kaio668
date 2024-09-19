@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definições básicas */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradiente de fundo */
+    color: #ecf0f1; /* Cor do texto */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #2c3e50; /* Fundo do container */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #9b59b6; /* Roxo claro */
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Efeito de brilho */
+}
+
+header p {
+    color: #ecf0f1; /* Cinza muito claro */
+    font-size: 1.2em;
+}
+
+/* Estilo da seção de conteúdo */
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    background: #34495e; /* Cor do fundo dos boxes */
+    border-radius: 12px;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.info-box:hover {
+    background: #2c3e50; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Efeito de ampliação */
+}
+
+.info-box h2 {
+    color: #9b59b6; /* Roxo claro */
+    font-size: 2em;
+}
+
+.info-box p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #9b59b6; /* Roxo claro */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8e44ad; /* Roxo mais escuro */
+    transform: scale(1.05); /* Efeito de ampliação */
+}
+
+.details-section {
+    display: none; /* Inicialmente escondido */
+    background: #2c3e50; /* Fundo escuro */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.details-section ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.details-section li {
+    margin: 10px 0;
+}
+
+.close-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #e74c3c; /* Vermelho para o botão de fechar */
+}
+
+.close-btn:hover {
+    background-color: #c0392b; /* Vermelho mais escuro */
+}

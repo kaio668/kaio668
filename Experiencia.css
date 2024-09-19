@@ -1,0 +1,168 @@
+https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900|SUSE:wght@100..800
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: arial, sans-serif;
+}
+
+.Cabeçalho-link ul a:hover{
+    background-color:#0cdb39;
+    color: #fff;ttps://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900|SUSE:wght@100..800
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: arial, sans-serif;
+} 
+body{
+  overflow: hidden; 
+  background-color: green;
+background-size: cover;
+background-position: center;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+.Cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Cabeçalho-link a{
+    color: #f6e9e9;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0 8px #0cdb39;
+}
+
+.Cabeçalho-link ul{
+    list-style-type: none;
+}
+
+.Cabeçalho-link ul li{
+    display: inline;
+    margin: 0 30px;
+}
+
+.Cabeçalho-link a :hover{
+    color: #0cdb39;
+    transition: 0.3s all;
+}
+
+.Cabeçalho-link a button:hover{
+    color: #fff;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #28d606;
+    color: #1de61d;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size:13px ;
+}
+button{
+    color: #2ece2e;
+    background: transparent;
+    border: solid 1px #2ece2e;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 150px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #2ece2e;
+    color: #fff;
+    transition: 0.5s;
+}
+.container-text{
+    padding: 150px 0 0 130px;
+}
+.text h3{
+    color:#fff ;
+    font-size:50px ;
+}
+.text h1{
+    color: #fff;
+    margin-top:10px;
+}
+
+.text span{
+    color: #2ece2e;
+
+}
+.text p{
+    color: #fff;
+    font-size: 20px;
+    font-weight:300 ;
+    margin-top:10px ;
+}
+
+.redes-socias a{
+    color: #2ece2e;
+    padding:10px ;
+    margin-top:5px ;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+
+/*Experiencias*/
+section .especialidades{
+    padding: 40px 4%;
+}
+
+section .especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff5b;
+}
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #00fe08;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+
